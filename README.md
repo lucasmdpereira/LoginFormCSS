@@ -1,6 +1,6 @@
-<h2>Desafio "RocketShoes"</h2>
+<h2>Desafio "Login Form CSS"</h2>
 
-![Group 1](https://user-images.githubusercontent.com/73071973/142681567-607a3217-d136-4536-977b-f46bc0e28ed8.png)
+![Group 1](https://user-images.githubusercontent.com/73071973/152804042-647fad83-6e0d-4f84-8a92-2d1c052bfd73.jpg)
 
 <h3>🛠 Technologies</h3>
 <ul>
