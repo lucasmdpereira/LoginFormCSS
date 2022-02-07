@@ -1,6 +1,6 @@
 <h2>Desafio "Login Form CSS"</h2>
 
-![Group 1](https://user-images.githubusercontent.com/73071973/152804042-647fad83-6e0d-4f84-8a92-2d1c052bfd73.jpg)
+![Group 1](https://user-images.githubusercontent.com/73071973/152804195-f0c75610-9659-4dac-bcb8-8c42a50d3e92.jpg)
 
 <h3>🛠 Technologies</h3>
 <ul>
