@@ -1,0 +1,243 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    color: var(--text-base);
+    outline:0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    background-color: var(--background);
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 4rem;
+    left: 4rem;
+}
+
+main {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    width: 57.2rem;
+    height: 51.2rem;
+    background-color: var(--form-background);
+    margin: auto;
+    padding: 0rem 11.9rem 0rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+h1{
+    padding-left: 3.4rem;
+    background-image: url('./images/log-in.svg');
+    background-size: 2.4rem;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--text-title);
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 2.7rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 33.5rem;
+    height: 4.4rem;
+    padding: 1.4rem 0rem 1.4rem 3.7rem;
+    border: 1px var(--text-base) solid;
+    border-radius: 4px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+input:focus {
+    border: 1px var(--primary-color) solid;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1.2rem;
+}
+
+input[type=email]{
+    background-image: url('./images/mail.svg');
+}
+
+input[type=email]:focus{
+    background-image: url('./images/mail-focus.svg');
+}
+
+input[type=password]{
+    background-image: url('./images/lock.svg');
+}
+
+input[type=password]:focus{
+    background-image: url('./images/lock-focus.svg');
+}
+
+form > div::before{
+    content: url('./images/eye.svg');
+    position: relative;
+    top: -5.2rem;
+    left: 30.5rem;
+}
+
+form > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+div a,
+form p,
+form span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+form div label{
+    display: block;
+    position: relative;
+    left: -3.7rem;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+}
+
+
+
+.check_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.myCheckbox {
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: 1px var(--text-base) solid;
+    border-radius: 4px;
+}
+
+.check_container input:checked ~ .myCheckbox {
+    background-image:url('./images/check.svg');
+    background-color: var(--primary-color);
+    border: 1px var(--primary-color) solid;
+}
+
+button{
+    width: 33.4rem;
+    height: 5.1rem;
+    color: var(--form-background);
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    margin-bottom: 1.4rem;
+}
+
+form span{
+    font-weight: 400;
+}
+
+form p{
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+    background-image: url('./images/side-image-2x.jpg');
+    background-size: cover;
+    background-position-y:center;
+}
+
+@media only screen and (max-width: 920px) {
+    header{
+        top: 2rem;
+        left: 2rem;
+    }
+    aside{
+        flex: 0;
+    }
+
+    .container{
+        margin: auto;
+        margin-top: 3rem;
+        padding: 0;
+        background-color: var(--background);
+        width: 33.5rem;
+    }
+
+    form > div{
+        justify-content: left;
+        padding-left: 4.2rem;
+    }
+
+
+    form > div::before{
+        left: 26rem;
+    }
+    
+    form p {
+        text-align: center;
+        width: 33.5rem;
+    }
+}
